@@ -1,0 +1,78 @@
+*{
+    font-family: Share Tech Mono;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    background: url(imagenes/ai-generated-8227409_1280.jpg);
+    background-size: cover;
+}
+
+.logo {
+    float: left;
+    height: 80px; 
+    border-radius: 70px;
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin: 20px 0px 50px 50px;
+}
+
+
+.text-area {
+    height: 650px;
+    border: none;
+    color: black;
+    padding-left: 15px;
+    padding-top: 10px;
+    text-transform: lowercase;
+    opacity: 0.5;
+    border-radius: 32px;
+}
+
+::placeholder {color: black;}
+    .text-area:focus {
+        outline: none;
+    }
+
+h6 {
+    margin: 0px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.mensaje_enc {
+    width: 400px;
+    height: 650px;
+    color: black;
+    padding-left: 15px;
+    padding-top: 10px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    opacity: 0.5;
+    border: none;
+}
+
+    .mensaje_enc:focus {
+        outline: none;
+    }   
+
+.btn-encriptar, .btn-desencriptar,.copiar {
+    border-radius: 24px;
+}
