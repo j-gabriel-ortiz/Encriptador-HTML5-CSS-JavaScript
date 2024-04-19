@@ -1,0 +1,245 @@
+*{
+    font-family: Share Tech Mono;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    background: url(imagenes/ai-generated-8227409_1280.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% auto;
+}
+
+header {
+    grid-column: 1 / span4;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 0 30px;
+    background-color: white;
+    border-radius: 20px;
+    opacity: .8;
+}
+
+.section_left {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.section_right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.section_left, .section_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+
+}
+
+.text-area {
+    height: 650px;
+    width: 70%;
+    border: none;
+    color: black;
+    padding-left: 15px;
+    padding-top: 10px;
+    text-transform: lowercase;
+    opacity: 0.7;
+    border-radius: 32px;
+}
+
+::placeholder {color: black;}
+    .text-area:focus {
+        outline: none;
+    }
+
+h6 {
+    margin: 0px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+.mensaje_enc {
+    width: 70%;
+    height: 650px;
+    color: black;
+    padding-left: 15px;
+    padding-top: 10px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    opacity: 0.7;
+    border: none;
+}
+
+    .mensaje_enc:focus {
+        outline: none;
+    }   
+
+.btn-encriptar, .btn-desencriptar,.copiar {
+    border-radius: 24px;
+}
+
+@media screen and (max-width:1440px) {
+    body {
+        background-size: 130%;
+    }
+}
+
+@media screen and (max-width:1420px) {
+    body {
+        background-size: 160%;
+        background-position: left center;
+        background-color: #203e26;
+    }
+
+    main {
+        grid-template-rows: 5% 80% auto;
+    }
+
+    h1 {
+        font-size: 1rem;
+        padding: 0 30px;
+    }
+
+    .text-area {
+        height: 550px;
+    }
+
+    .section_right {
+        justify-content: space-between;
+    }
+
+    .mensaje_enc {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:1235px) {
+    h6 {
+        font-size: .55rem;
+    }
+
+    .btn-encriptar, .btn-desencriptar,.copiar {
+        font-size: .7rem;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .text-area, .mensaje_enc {
+        width: 85%;
+        opacity: .9;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        background-size: 200%;
+        background-position-x: left;
+        background-position-y: center;
+        background-color: #203e26;
+    }
+
+    main {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 6% auto;
+    }
+
+    header {
+        grid-row: 1;
+        grid-column: 1 / span2;
+    }
+
+    h1 {
+        line-height: normal;
+    }
+
+    .section_left {
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: space-between;
+    }
+
+    h6 {
+        font-size: .5rem;
+    }
+    
+    .section_right {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .text-area, .mensaje_enc {
+        width: 85%;
+        height: 400px;
+        opacity: .9;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-size: 330%;
+    }
+
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: 5% auto auto 6%;
+    }
+    header {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    h1 {
+        font-size: .8rem;
+    }
+
+    .section_left {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .section_right {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .text-area, .mensaje_enc {
+        font-size: .6rem;
+    }
+    
+    .btn-encriptar, .btn-desencriptar,.copiar {
+        font-size: .5rem;
+    }
+
+}

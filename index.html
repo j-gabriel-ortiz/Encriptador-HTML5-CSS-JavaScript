@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Encriptador</h1>
+        </header>
+        <section class="section_left">
+            <textarea class="text-area" placeholder="Ingrese texto aquí"></textarea>
+            <div>
+                <h6 class="informacio">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="btns">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesncriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section_right">
+            <textarea class="mensaje_enc"></textarea>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
